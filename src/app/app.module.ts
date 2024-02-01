@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
     TareasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     FormsModule
   ],
   providers: [],

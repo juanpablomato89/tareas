@@ -15,4 +15,16 @@ export class TareasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  agregarTareas(): void {
+    let tarea: Tareas = {
+      nombre: this.nombreTarea,
+      estado: false,
+    }
+
+    this.listaTareas.unshift(tarea);
+
+    this.nombreTarea = '';
+    console.log('listado de tareas', this.listaTareas);
+  }
+
 }

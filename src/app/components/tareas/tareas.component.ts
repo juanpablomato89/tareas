@@ -27,4 +27,14 @@ export class TareasComponent implements OnInit {
     console.log('listado de tareas', this.listaTareas);
   }
 
+  eliminarTarea(index: number): void {
+    this.listaTareas.splice(index, 1);
+
+  }
+
+  actualizarTarea(index: number, estado: boolean): void {
+    this.listaTareas[index].estado = !estado;
+
+  }
+
 }
